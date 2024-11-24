@@ -23,8 +23,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem; /* Reduced padding for a smaller height */
     color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add slight shadow for depth */
+}
+
+.navbar .logo {
+    font-size: 1.2rem; /* Adjust logo size to match smaller navbar */
 }
 
 .navbar ul {
@@ -36,8 +41,9 @@ body {
 .navbar ul li a {
     text-decoration: none;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.3rem 0.8rem; /* Smaller padding for menu items */
     transition: background 0.3s ease, color 0.3s ease;
+    font-size: 0.9rem; /* Adjust font size */
 }
 
 .navbar ul li a:hover {
