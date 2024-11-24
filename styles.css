@@ -22,7 +22,7 @@ body {
     z-index: 1000; /* Ensure navbar is above other content */
     background: #333; /* Dark background */
     display: flex; /* Horizontal layout */
-    justify-content: center; /* Center the navigation items */
+    justify-content: center; /* Center the navigation items horizontally */
     align-items: center;
     padding: 0.8rem 0; /* Compact height */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
@@ -31,7 +31,7 @@ body {
 /* Navigation Links */
 .navbar ul {
     list-style: none;
-    display: flex; /* Align links horizontally */
+    display: flex; /* Horizontal layout */
     gap: 2rem; /* Space between links */
     margin: 0;
     padding: 0;
