@@ -16,56 +16,72 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    position: fixed; /* Stays fixed at the top on both scroll directions */
+    position: fixed; /* Fixed position to ensure the navbar is always visible */
     top: 0;
-    width: 100%; /* Spans the entire width */
-    z-index: 1000; /* Stays on top of all content */
-    background: #333;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure navbar is above other content */
+    background: #333; /* Dark background */
     display: flex; /* Horizontal layout */
-    justify-content: space-between;
+    justify-content: center; /* Center the navigation items */
     align-items: center;
-    padding: 0.5rem 1rem; /* Compact height */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds depth */
-    color: #fff;
+    padding: 0.8rem 0; /* Compact height */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
-.navbar .logo {
-    font-size: 1.2rem;
-    color: #fff;
-    text-transform: uppercase;
-}
-
+/* Navigation Links */
 .navbar ul {
     list-style: none;
-    display: inline; /* Horizontal alignment */
-    gap: 1rem;
+    display: flex; /* Align links horizontally */
+    gap: 2rem; /* Space between links */
     margin: 0;
     padding: 0;
 }
 
 .navbar ul li a {
     text-decoration: none;
-    color: #fff;
-    padding: 0.3rem 0.8rem;
-    font-size: 0.9rem;
-    transition: background 0.3s ease, color 0.3s ease;
+    color: #fff; /* White color for links */
+    font-size: 1.2rem; /* Larger font size */
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
 }
 
 .navbar ul li a:hover {
-    background: #555;
-    border-radius: 5px;
+    color: #00bcd4; /* Hover color */
+    transform: scale(1.1); /* Slight zoom effect */
 }
 
-/* Section Styles */
+/* Adjust section padding to avoid overlap with fixed navbar */
 .section {
     padding: 4rem 2rem;
     text-align: center;
-    margin-top: 3rem; /* Adjust for fixed navbar height */
+    margin-top: 4rem; /* Space to prevent overlap with fixed navbar */
 }
 
+/* Container for content */
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+        gap: 1rem; /* Space between items */
+    }
+
+    .navbar ul li a {
+        font-size: 1rem; /* Slightly smaller font size on small screens */
+    }
 }
 
 /* Home Section */
@@ -129,29 +145,4 @@ body {
     font-size: 1rem;
     line-height: 1.8;
     color: #555;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .home-section h1 {
-        font-size: 2rem;
-    }
-
-    .home-section p {
-        font-size: 1rem;
-    }
 }
