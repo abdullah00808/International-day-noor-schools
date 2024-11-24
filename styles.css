@@ -37,7 +37,7 @@ body {
 
 .navbar ul {
     list-style: none;
-    display: flex; /* Horizontal alignment */
+    display: inline; /* Horizontal alignment */
     gap: 1rem;
     margin: 0;
     padding: 0;
