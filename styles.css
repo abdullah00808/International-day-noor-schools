@@ -16,39 +16,43 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    position: sticky; /* Navbar sticks to the top */
+    top: 0; /* Ensures it stays at the top of the viewport */
+    z-index: 1000; /* Stays above other content */
     background: #333;
-    display: flex;
+    display: flex; /* Horizontal layout */
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem; /* Reduced padding for a smaller height */
+    padding: 0.5rem 1rem; /* Reduced padding for smaller height */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds depth with a shadow */
     color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add slight shadow for depth */
 }
 
 .navbar .logo {
-    font-size: 1.2rem; /* Adjust logo size to match smaller navbar */
+    font-size: 1.2rem; /* Slightly smaller logo font */
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
+    list-style: none; /* Removes default list styling */
+    display: flex; /* Makes links horizontal */
+    gap: 1rem; /* Adds spacing between links */
+    margin: 0; /* Removes unnecessary spacing */
+    padding: 0;
 }
 
 .navbar ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 0.3rem 0.8rem; /* Smaller padding for menu items */
+    text-decoration: none; /* Removes underline */
+    color: #fff; /* White text for links */
+    padding: 0.3rem 0.8rem; /* Reduced padding for compact look */
+    font-size: 0.9rem; /* Adjusted font size */
     transition: background 0.3s ease, color 0.3s ease;
-    font-size: 0.9rem; /* Adjust font size */
 }
 
 .navbar ul li a:hover {
-    background: #555;
-    border-radius: 5px;
+    background: #555; /* Highlight on hover */
+    border-radius: 5px; /* Rounded corners on hover */
 }
 
 /* Section Styles */
@@ -139,7 +143,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar ul {
-        flex-direction: column;
+        flex-direction: column; /* Stacks links vertically on small screens */
         gap: 0.5rem;
     }
 
