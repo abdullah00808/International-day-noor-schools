@@ -16,15 +16,16 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    position: sticky; /* Sticks to the top */
+    position: fixed; /* Stays fixed at the top on both scroll directions */
     top: 0;
-    z-index: 1000;
+    width: 100%; /* Spans the entire width */
+    z-index: 1000; /* Stays on top of all content */
     background: #333;
     display: flex; /* Horizontal layout */
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1rem; /* Compact height */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds depth */
     color: #fff;
 }
 
@@ -59,6 +60,7 @@ body {
 .section {
     padding: 4rem 2rem;
     text-align: center;
+    margin-top: 3rem; /* Adjust for fixed navbar height */
 }
 
 .container {
