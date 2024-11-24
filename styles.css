@@ -32,6 +32,8 @@ body {
 .navbar ul {
     list-style: none;
     display: flex; /* Horizontal layout */
+    justify-content: center; /* Centers the links within the navbar */
+    align-items: center; /* Vertically aligns the links */
     gap: 2rem; /* Space between links */
     margin: 0;
     padding: 0;
