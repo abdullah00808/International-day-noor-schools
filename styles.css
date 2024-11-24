@@ -32,9 +32,14 @@ body {
 .navbar ul {
     list-style: none;
     display: flex; /* Horizontal layout */
-    justify-content: center; /* Centers the links within the navbar */
-    align-items: center; /* Vertically aligns the links */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Centers the links */
     gap: 2rem; /* Space between links */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
     margin: 0;
     padding: 0;
 }
@@ -77,7 +82,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar ul {
-        flex-direction: column; /* Stack links vertically on smaller screens */
+        flex-direction: row; /* Ensure wrapping on smaller screens */
         gap: 1rem; /* Space between items */
     }
 
