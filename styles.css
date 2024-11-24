@@ -16,43 +16,43 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    position: sticky; /* Navbar sticks to the top */
-    top: 0; /* Ensures it stays at the top of the viewport */
-    z-index: 1000; /* Stays above other content */
+    position: sticky; /* Sticks to the top */
+    top: 0;
+    z-index: 1000;
     background: #333;
     display: flex; /* Horizontal layout */
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem; /* Reduced padding for smaller height */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds depth with a shadow */
+    padding: 0.5rem 1rem; /* Compact height */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     color: #fff;
 }
 
 .navbar .logo {
-    font-size: 1.2rem; /* Slightly smaller logo font */
+    font-size: 1.2rem;
     color: #fff;
     text-transform: uppercase;
 }
 
 .navbar ul {
-    list-style: none; /* Removes default list styling */
-    display: flex; /* Makes links horizontal */
-    gap: 1rem; /* Adds spacing between links */
-    margin: 0; /* Removes unnecessary spacing */
+    list-style: none;
+    display: flex; /* Horizontal alignment */
+    gap: 1rem;
+    margin: 0;
     padding: 0;
 }
 
 .navbar ul li a {
-    text-decoration: none; /* Removes underline */
-    color: #fff; /* White text for links */
-    padding: 0.3rem 0.8rem; /* Reduced padding for compact look */
-    font-size: 0.9rem; /* Adjusted font size */
+    text-decoration: none;
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    background: #555; /* Highlight on hover */
-    border-radius: 5px; /* Rounded corners on hover */
+    background: #555;
+    border-radius: 5px;
 }
 
 /* Section Styles */
@@ -81,20 +81,18 @@ body {
 
 .home-section p {
     font-size: 1.2rem;
-    margin: 0 auto;
     max-width: 700px;
-    line-height: 1.8;
+    margin: 0 auto;
 }
 
 .home-section .btn {
-    display: inline-block;
     margin-top: 2rem;
     padding: 1rem 2rem;
     background: #fff;
     color: #2575fc;
     border-radius: 25px;
-    font-weight: bold;
     text-decoration: none;
+    font-weight: bold;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
@@ -143,7 +141,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar ul {
-        flex-direction: column; /* Stacks links vertically on small screens */
+        flex-direction: column;
         gap: 0.5rem;
     }
 
